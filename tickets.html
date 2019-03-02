@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Brooklyn Film Festival</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="register.css">
+      <link rel="stylesheet" href="custom.css">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Raleway:black|Raleway:bold" rel="stylesheet">
+
+   </head>
+
+   <body id="ticketsBody">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-bg-light fixed-top">
+         <a class="navbar-brand" href="index.html">Brooklyn Film Festival</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="announcements.html">Announcements</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Schedule</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="tickets.html">Tickets</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!-- /NAVBAR -->
+
+      <!-- FORM -->
+      <main class="register container">
+         <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+               <div class="card card-signin flex-row my-5">
+                  <div class="card-img-left d-none d-md-flex"></div>
+                  <!-- image left side -->
+                  <div class="card-body form-signin">
+                     <h5 class="card-title text-center">Get Your Free Tickets!</h5>
+                     <!-- <form class="form-signin" id="form-personal"> -->
+                        <div id="accordion">
+                           <div class="card">
+                              <div class="card-header" id="headingOne">
+                                 <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img src="img/steps.png" class="stepsIcon "alt="steps icon"/>
+                                    STEP 1 - FILL OUT YOUR INFO
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                 <div class="card-body">
+                                    <!-- USER INFO FORM -->
+                                    <section>
+                                       <div class="form-label-group">
+                                          <input type="text" id="inputName" class="form-control" placeholder="First Name" required autofocus>
+                                          <label for="inputName">First Name</label>
+                                       </div>
+                                       <div class="form-label-group">
+                                          <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required>
+                                          <label for="inputLastName">Last Name</label>
+                                       </div>
+                                       <hr>
+                                       <div class="form-label-group">
+                                          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                          <label for="inputEmail">Email address</label>
+                                       </div>
+                                       <div class="form-label-group">
+                                          <input type="tel" id="inputTel" class="form-control" placeholder="Phone Number" required>
+                                          <label for="inputTel">Phone Number</label>
+                                       </div>
+                                    </section>
+                                    <!-- / USER INFO FORM -->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                 <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><img src="img/steps.png" class="stepsIcon "alt="steps icon"/>
+                                    STEP 2 - CHOOSE YOUR MOVIE
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                 <div class="card-body">
+                                    <!-- ALL THE MOVIE CARDS -->
+                                    <section>
+                                       <h5 class="card-title text-center">August 5th</h5>
+                                       <div class="allcards" data-toggle="buttons">
+                                          <!-- CARD GROUP 1 -->
+                                          <div class="card-deck">
+                                             <!-- MOVIE 1 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie3.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 1</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark ">
+                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option2" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option3" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group btnGroupDrop" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 1 -->
+                                             <!-- MOVIE 2 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie1.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 2</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle">
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option4" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option5" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option6" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop2" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 2 -->
+                                             <!-- MOVIE 3 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie4.jpeg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 3</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option7" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option8" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option9" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop3" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 3 -->
+                                          </div>
+                                          <!-- /CARD GROUP 1 -->
+                                          <h5 class="card-title text-center">August 6th</h5>
+                                          <!-- CARD GROUP 2 -->
+                                          <div class="card-deck">
+                                             <!-- MOVIE 1 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie1.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 1</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark ">
+                                                         <input type="radio" name="options" id="option10" autocomplete="off" checked> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option11" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option12" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop4" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 1 -->
+                                             <!-- MOVIE 2 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie3.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 2</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option13" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option14" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option15" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop5" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop5">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 2 -->
+                                             <!-- MOVIE 3 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie4.jpeg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 3</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option16" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option17" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option18" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop6" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop6">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 3 -->
+                                          </div>
+                                          <!-- /CARD GROUP 2 -->
+                                          <h5 class="card-title text-center">August 7th</h5>
+                                          <!-- CARD GROUP 1 -->
+                                          <div class="card-deck">
+                                             <!-- MOVIE 1 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie3.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 1</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark ">
+                                                         <input type="radio" name="options" id="option19" autocomplete="off" checked> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option20" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option21" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop7" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop7">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 1 -->
+                                             <!-- MOVIE 2 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie1.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 2</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option22" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option23" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option24" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop8" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop8">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 2 -->
+                                             <!-- MOVIE 3 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie4.jpeg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 3</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option25" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option26" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option27" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop9" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop9">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 3 -->
+                                          </div>
+                                          <!-- /CARD GROUP 1 -->
+                                          <h5 class="card-title text-center">August 8th</h5>
+                                          <!-- CARD GROUP 2 -->
+                                          <div class="card-deck">
+                                             <!-- MOVIE 1 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie1.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 1</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark ">
+                                                         <input type="radio" name="options" id="option28" autocomplete="off" checked> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option29" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option30" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop10" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop10">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 1 -->
+                                             <!-- MOVIE 2 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie3.jpg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 2</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option31" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option32" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option33" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop11" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop11">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 2 -->
+                                             <!-- MOVIE 3 -->
+                                             <div class="card card-movie">
+                                                <div class="card-img-top">
+                                                   <img class="card-img" src="img/movie4.jpeg" alt="Movie image">
+                                                </div>
+                                                <div class="card-body">
+                                                   <h5 class="card-title">Movie 3</h5>
+                                                   <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                                      <div class="btn-group btn-group-toggle" >
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option34" autocomplete="off"> 10AM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option35" autocomplete="off"> 3PM
+                                                         </label>
+                                                         <label class="btn btn-outline-dark">
+                                                         <input type="radio" name="options" id="option36" autocomplete="off"> 10PM
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- Quantity Selection -->
+                                                   <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                                      <div class="btn-group" role="group">
+                                                         <button id="btnGroupDrop12" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         Quantity
+                                                         </button>
+                                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop12">
+                                                            <a class="dropdown-item">1</a>
+                                                            <a class="dropdown-item">2</a>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!-- /MOVIE 3 -->
+                                          </div>
+                                          <!-- /CARD GROUP 2 -->
+                                       </div>
+                                    </section>
+                                    <!-- / ALL THE MOVIE CARDS -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- / ACCORDION -->
+                        <button id="rsvpBtn" class="btn btn-lg btn-primary btn-block text-uppercase" data-toggle="modal" data-target="#myModal" >Reserve My Ticket!</button>
+                        <a href="index.html" class="d-block text-center mt-2 small">Never Mind</button>
+                        <hr class="my-4">
+                     <!-- </form> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- MODAL -->
+         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+           <div class="modal-dialog modal-dialog-centered" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLongTitle">Woohoo!</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 Your tickets has been send to your email!
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- /MODAL -->
+      </main>
+      <!-- FOOTER -->
+      <footer class="footer">
+         <section class="footer-container container">
+            <!-- ROW -->
+            <section class="footer-media row justify-content-lg">
+               <div class="col-followus col col-9">
+                  <p>Stay tuned and follow us on Social Media!</p>
+               </div>
+               <div class="col-icons col col-lg-auto">
+                  <a href="http://www.facebook.com" target="_blank"><img class="icon" src="img/fb-b.png" alt="facebook logo"/></a>
+                  <a href="http://www.instagram.com" target="_blank"><img class="icon" src="img/instagram-b.png" alt="instagram logo"/></a>
+                  <a href="http://www.twitter.com" target="_blank"><img class="icon" src="img/twitter-b.png" alt="twitter logo"/></a>
+               </div>
+            </section>
+            <!-- ROW -->
+            <section class="row-links row justify-content-lg-center">
+               <aside class="col-text col">
+                  <h1>Lorem Ipsum</h1>
+                  <hr align="left">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               </aside>
+               <aside class="col-useful-links col">
+                  <h1>Useful Links</h1>
+                  <hr align="left">
+                  <ul class="list-group">
+                     <li>
+                        <a href="#">
+                           <p>Brooklyn Park</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p>Brooklyn News</p>
+                        </a>
+                     </li>
+                  </ul>
+               </aside>
+               <aside class="col-contact col">
+                  <h1>Contact Us</h1>
+                  <hr align="left">
+                  <ul class="list-group">
+                     <li>
+                        <p>123456789</p>
+                     </li>
+                     <li>
+                        <p>Street 123</p>
+                     </li>
+                     <li>
+                        <p>Brooklyn</p>
+                     </li>
+                  </ul>
+               </aside>
+               <aside class="col-pages col">
+                  <h1>Pages</h1>
+                  <hr align="left">
+                  <ul class="list-group">
+                    <li>
+                       <a href="index.html">
+                          <p>Home</p>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="about.html">
+                          <p>About Us</p>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="announcements.html">
+                          <p>Announcements</p>
+                       </a>
+                    </li>
+                    <li>
+                       <a href="tickets.html">
+                          <p>Tickets</p>
+                       </a>
+                    </li>
+                  </ul>
+               </aside>
+            </section>
+            <!-- /ROW -->
+            <!-- ROW -->
+            <section class="row justify-content-lg-center">
+               <div class="col-copyright col-lg-auto col-centered">
+                  <p class="copyright">Copyright © 2018 Brooklyn Outdoor Film Festival. All Rights Reserved.</p>
+               </div>
+            </section>
+            <!-- /ROW -->
+         </section>
+      </footer>
+      <!-- /FOOTER -->
+      <!-- END OF EVERYTHING -->
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="script.js"></script>
+   </body>
+</html>
